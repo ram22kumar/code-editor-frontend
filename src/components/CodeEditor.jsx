@@ -11,7 +11,7 @@ const CodeEditor = ({ documentId, userId, username, userColor }) => {
   const versionRef = useRef(0);
 
   const [code, setCode] = useState("");
-  const [language, setLanguage] = useState("javascript");
+  const [language] = useState("javascript");
   const [remoteCursors, setRemoteCursors] = useState(new Map());
   const [activeUsers, setActiveUsers] = useState([]);
 
